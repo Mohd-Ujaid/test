@@ -96,6 +96,10 @@ app.get('/', (req, res) => {
         message: 'API is running'
     });
 });
+app.post("/test",(req,res)=>{
+    const {name} = req.body
+    req.send(name)
+})
 
 // User signup endpoint
 // app.post('/signup', async (req, res) => {
